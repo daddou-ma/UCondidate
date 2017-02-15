@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>UCondidate</title>
+        <link href="styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <!-- Timer Box -->
+        <div id="random" class="box">
+            <h2 class="random__title">Choosing a Winner</h2>
+            <div class="random__number">
+                <span class="random__digit" id="l1">0</span>
+                <span class="random__digit" id="l2">0</span>
+                <span class="random__digit" id="l3">0</span>
+            </div>
+            <button class="btn-default" onClick="timer.reset()">Reset</button>
+            <button class="btn-primary" onClick="timer.start(0, 200)">Start</button>
+        </div>
+    </body>
+    <script src="scripts.js" type="text/javascript"></script>
+</html>
