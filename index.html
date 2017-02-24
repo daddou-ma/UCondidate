@@ -6,6 +6,7 @@
     <body>
         <!-- Timer Box -->
         <div id="random" class="box">
+            <img src="./logo.png" class="logo">
             <h2 class="random__title">Choosing a Winner</h2>
             <div class="random__number">
                 <span class="random__digit" id="l1">0</span>
@@ -13,7 +14,17 @@
                 <span class="random__digit" id="l3">0</span>
             </div>
             <button class="btn-default" onClick="timer.reset()">Reset</button>
-            <button class="btn-primary" onClick="timer.start(0, 200)">Start</button>
+            <button class="btn-primary" onClick="dialog.show()">Start</button>
+        </div>
+        <div id="dialog" class="dialog">
+            <div class="dialog__head">Number of Participants</div>
+            <div class="dialog__body">
+                <input class="input" id="input" type="number" placeholder="Number">
+            </div>
+            <div class="dialog__foot">
+                <button id="validate" class="btn-default" onClick="dialog.hide()">Cancel</button>
+                <button id="validate" class="btn-primary" onClick="dialog.next()">Get a Winner</button>
+            </div>
         </div>
     </body>
     <script src="scripts.js" type="text/javascript"></script>

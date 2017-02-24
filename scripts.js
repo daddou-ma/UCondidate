@@ -55,4 +55,24 @@ let UTimer = function() {
     return this;
 }
 
+let Dialog = function() {
+    $dialog = document.getElementById('dialog')
+    $input = document.getElementById('input')
+    
+    this.show = function() {
+        $dialog.style.display = 'block'
+    }
+    
+    this.hide = function() {
+        $dialog.style.display = 'none'
+    }
+    
+    this.next = function() {
+        timer.start(0, $input.value)
+        this.hide()
+    }
+    return this;
+}
+
 let timer = new UTimer()
+let dialog = new Dialog()

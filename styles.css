@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: #333
+}
+
+body {
+    background: #202023;
+}
+
+.logo {
+    width: 100px;
+}
+
 .box {
     max-width: 430px;
     margin: 50px auto;
-    background: #E8E8E8;
+    background: #fbfbfb;
     border: 1px solid #CCC;
     border-radius: 4px;
     padding: 15px
@@ -41,10 +56,43 @@
 }
 
 .btn-primary {
-    border: 1px solid #1c769d;
-    background: #2c86ad;
+    border: 1px solid #2488ab;
+    background: #3498db;
     color: #FFF;
     line-height: 38px;
     width: 49%;
     border-radius: 3px;
+}
+
+.dialog {
+    position: absolute;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    display: none;
+    left: calc(50% - 150px);
+    top: calc(50% - 120px);
+    box-shadow: 0 0 1px 1000px rgba(0,0,0,0.8);
+}
+
+.dialog__head {
+    background: #EEE;
+    padding: 15px;
+}
+
+.dialog__body {
+    background: #FFF;
+    padding: 15px;
+}
+
+.dialog__foot {
+    background: #EEE;
+    padding: 15px;
+}
+
+.input {
+    border: 1px solid #CCC;
+    line-height: 30px;
+    padding: 0 15px;
+    width: 100%;
 }
